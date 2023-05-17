@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    tools:context="edu.cuhk.csci3310.cufood.RestaurantActivity">
+
+<!--    <android.support.design.widget.FloatingActionButton-->
+<!--        android:id="@+id/fab_show_rating_dialog"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:contentDescription="edit button"-->
+<!--        app:srcCompat="@drawable/ic_edit_white" />-->
+
+
+    <Button
+        android:id="@+id/menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/order_button"
+        android:onClick="onMenuClicked"
+        android:text="View and Edit Menus (For canteen side)" />
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="onOrderClicked"
+        android:text="Manage orders (For canteen side)"/>
+
+    <Button
+            android:id="@+id/rating_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_button"
+            android:layout_centerHorizontal="true"
+            android:onClick="onRatingClicked"
+            android:text="View and post ratings (For customer)"/>
+
+<!--    <android.support.design.widget.BottomNavigationView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/canteen_bottom_navigation"-->
+<!--        app:itemBackground="@color/colorPrimary"-->
+<!--        app:itemTextColor="@drawable/selector"-->
+<!--        app:itemIconTint="@drawable/selector"-->
+<!--        app:menu="@menu/menu_for_canteen"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        />-->
+    <Button
+        android:id="@+id/view_menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating_button"
+        android:layout_centerHorizontal="true"
+        android:onClick="onMenuCustomerClicked"
+        android:text="View and order menu(For customer)" />
+
+</RelativeLayout>

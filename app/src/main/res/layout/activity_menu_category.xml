@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MenuCategoryActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme"
+        app:logo="@drawable/ic_menu_management_white"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:title="Menu Management"
+        app:titleMarginStart="24dp"
+        app:titleTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/category_top_card"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/beige"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category_instruction"
+            android:layout_margin="16dp"/>
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="add/edit the food list"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginBottom="16dp"/>-->
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/category_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/category_top_card"
+        tools:listitem="@layout/item_category"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"/>
+
+    <!-- View for empty categories -->
+    <LinearLayout
+        android:id="@+id/view_empty_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/category_top_card"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.Body1"
+            android:text="@string/empty_category"
+            android:textColor="@color/greyDisabled" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_category_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="edit button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add_white_24px" />
+
+<!--    <android.support.design.widget.BottomNavigationView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/canteen_bottom_navigation"-->
+<!--        app:itemBackground="@color/colorPrimary"-->
+<!--        app:itemTextColor="@drawable/selector"-->
+<!--        app:itemIconTint="@drawable/selector"-->
+<!--        app:menu="@menu/menu_for_canteen"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        />-->
+</RelativeLayout>

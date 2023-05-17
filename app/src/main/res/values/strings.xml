@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">CU Eats</string>
+
+    <string name="value_any_category">All food</string>
+    <string name="value_any_city">Anywhere</string>
+    <string name="value_any_price">Any price</string>
+
+    <string name="price_1">$</string>
+    <string name="price_2">$$</string>
+    <string name="price_3">$$$</string>
+
+    <string name="label_category">Category</string>
+    <string name="label_city">City</string>
+    <string name="label_price">Price</string>
+    <string name="label_sort_by">Sort By</string>
+
+    <string name="fmt_num_ratings" translatable="false">(%d)</string>
+    <string name="all_restaurants">All Restaurants</string>
+    <string name="header_filters">Filter</string>
+    <string name="search">Search</string>
+
+    <string name="sort_by_rating">Sort by Rating</string>
+    <string name="sort_by_popularity">Sort by Popularity</string>
+    <string name="sort_by_price">Sort by Price</string>
+
+    <string name="sorted_by_rating">sorted by rating</string>
+    <string name="sorted_by_price">sorted by price</string>
+    <string name="sorted_by_popularity">sorted by popularity</string>
+
+    <string name="add_random_items">Add Random Items</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="delete_all">Delete All</string>
+    <string name="divider_bullet">•</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="message_no_results">Oops, couldn\'t find any results\nthat matched your filter</string>
+    <string name="message_no_reviews">There is no review for this canteen.\n Be the first one who creates a review.</string>
+    <string name="hint_review">How was your experience?</string>
+    <string name="submit">Submit</string>
+    <string name="filter_add_review">Add review</string>
+
+    <!-- Types of food I could think of in 5 minutes -->
+    <string-array name="categories">
+        <item>@string/value_any_category</item>
+
+        <item>Brunch</item>
+        <item>Burgers</item>
+        <item>Coffee</item>
+        <item>Deli</item>
+        <item>Dim Sum</item>
+        <item>Indian</item>
+        <item>Italian</item>
+        <item>Mediterranean</item>
+        <item>Mexican</item>
+        <item>Pizza</item>
+        <item>Ramen</item>
+        <item>Sushi</item>
+    </string-array>
+    ite
+
+    <!-- Cities, only Hong Kong now -->
+    <string-array name="cities">
+        <item>@string/value_any_city</item>
+
+        <item>Hong Kong</item>
+
+    </string-array>
+
+    <!-- Price filters -->
+    <string-array name="prices">
+        <item>@string/value_any_price</item>
+
+        <item>@string/price_1</item>
+        <item>@string/price_2</item>
+        <item>@string/price_3</item>
+    </string-array>
+
+    <!-- Ways you can sort restaurants -->
+    <string-array name="sort_by">
+        <item>@string/sort_by_rating</item>
+        <item>@string/sort_by_popularity</item>
+        <item>@string/sort_by_price</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_new_category">Add a new category</string>
+    <string name="edit_category">Edit the category</string>
+    <string name="add_new_menu">Add new menu</string>
+    <string name="category_name">Category name</string>
+    <string name="menu_name">Name</string>
+    <string name="empty_category">There is no available category.\nYou can create the new one.</string>
+    <string name="empty_menu">There is no available menu.\nYou can create the new one.</string>
+    <string name="category_instruction">1. You can click + button to add a new category/set.\n2.Click at the category card to go to |Menu in the category/set| page. Then, add menus to this category/set.\n3.Come back to this page and click at the switch to make it visible to customer.</string>
+    <string name="select_menu_image">Select Menu Image</string>
+    <string name="select_category">Select category</string>
+    <string name="menus_in_category_set">Menus in the category/set</string>
+    <string name="menu_price">Price</string>
+    <string name="menu_description">Description</string>
+    <string name="edit">edit</string>
+    <string name="title_activity_canteen_navigation">CanteenNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

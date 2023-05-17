@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    tools:context=".CanteenSettingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme"
+        app:logo="@drawable/ic_setting_white"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:title="Canteen Setting"
+        app:titleMarginStart="24dp"
+        app:titleTextColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/setting_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            style="@style/AppTheme.Headline"
+            android:text="CWC Chu Staff Canteen"
+            android:hint="Restaurant Name"
+            android:layout_centerHorizontal="true"/>
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/setting_rating"
+            style="@style/Widget.MaterialRatingBar.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_name"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:id="@+id/setting_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/setting_rating"
+            android:src="@drawable/food"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/setting_select_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_image"
+            android:text="Select new image"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp" />
+
+        <EditText
+            style="@style/AppTheme.Subheader"
+            android:id="@+id/setting_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_select_image"
+            android:layout_marginLeft="50dp"
+            android:hint="Food Category"
+            android:minHeight="48dp"
+            android:text="Burgers" />
+
+        <EditText
+            android:id="@+id/setting_location"
+            style="@style/AppTheme.Subheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/setting_category"
+            android:layout_below="@id/setting_select_image"
+            android:layout_marginLeft="8dp"
+            android:hint="Location"
+            android:minHeight="48dp"
+            android:text="Hong Kong" />
+
+        <LinearLayout
+            android:id="@+id/button_set1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_location"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/profile_form_cancel"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textColor="@color/greySecondary"
+                android:theme="@style/ThemeOverlay.FilterButton" />
+            <Button
+                android:id="@+id/profile_form_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"
+                android:theme="@style/ThemeOverlay.FilterButton" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+<!--        <View-->
+<!--            android:id="@+id/"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_margin="16dp"-->
+<!--            android:layout_below="@+id/button_set1"-->
+<!--            android:background="@android:color/darker_gray"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/pwd_title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/button_set1"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            style="@style/AppTheme.Headline"-->
+<!--            android:text="Change Password"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/old_pwd"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/pwd_title"-->
+<!--            android:hint="Old Password"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:minWidth="200sp"-->
+<!--            android:minHeight="48dp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/new_pwd"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/old_pwd"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:hint="New Password"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:minWidth="200sp"-->
+<!--            android:minHeight="48dp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/confirm_new_pwd"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/new_pwd"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:hint="Confirm New Password"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:minWidth="200sp"-->
+<!--            android:minHeight="48dp" />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/confirm_new_pwd"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1" />-->
+<!--        <Button-->
+<!--            android:id="@+id/pwd_form_cancel"-->
+<!--            style="@style/Base.Widget.AppCompat.Button.Borderless"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="@string/cancel"-->
+<!--            android:textColor="@color/greySecondary"-->
+<!--            android:theme="@style/ThemeOverlay.FilterButton" />-->
+<!--        <Button-->
+<!--            android:id="@+id/pwd_form_submit"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Submit"-->
+<!--            android:theme="@style/ThemeOverlay.FilterButton" />-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1" />-->
+<!--    </LinearLayout>-->
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCartActivity"
+    android:background="@color/beige">
+
+    <TextView
+        android:id="@+id/text_shopping_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Shopping Cart"
+        android:background="@color/colorPrimary"
+        android:paddingHorizontal="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/beige"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cart_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/text_shopping_cart"
+        />
+
+    <TextView
+        android:id="@+id/choices_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a delivery method:"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/cart_recycler"/>
+
+
+    <RadioGroup
+        android:id="@+id/delivery_choices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/choices_description"
+        android:layout_marginLeft="15dp"
+        >
+
+        <RadioButton
+            android:id="@+id/choice_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Up"
+            android:textSize="15dp"/>
+
+        <RadioButton
+            android:id="@+id/choice_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Door Delivery"
+            android:checked="true"
+            android:textSize="15dp"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/deli_address"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="Address"
+        android:layout_below="@id/delivery_choices"/>
+
+    <TextView
+        android:id="@+id/total_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: "
+        android:layout_below="@+id/deli_address"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/notes_to_canteen"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="Notes to the Canteen e.g. your contacts"
+        android:layout_below="@+id/total_text"
+        android:layout_marginBottom="10dp"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/checkout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm and Pay"
+        android:textColor="@color/beige"
+        android:layout_below="@+id/notes_to_canteen"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18dp"
+        android:backgroundTint="@color/colorPrimary"/>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_management"
+        android:title="Menu Management"
+        android:icon="@drawable/ic_menu_management_white"/>
+
+    <item
+        android:id="@+id/order_management"
+        android:title="Order Management"
+        android:icon="@drawable/ic_order_management_white"/>
+
+    <item
+        android:id="@+id/canteen_setting"
+        android:title="Canteen Setting"
+        android:icon="@drawable/ic_setting_white"/>
+
+    <item
+        android:id="@+id/canteen_sign_out"
+        android:title="@string/sign_out"/>
+
+</menu>

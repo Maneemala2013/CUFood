@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/menu_image"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:background="#757575"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food_1" />
+
+    <TextView
+        android:id="@+id/menu_name"
+        style="@style/AppTheme.Subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/menu_image"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/menu_image"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="Sandwich" />
+
+    <TextView
+        android:id="@+id/menu_item_divider"
+        style="@style/AppTheme.TextDivider"
+        android:layout_alignTop="@+id/menu_name"
+        android:layout_toRightOf="@+id/menu_name"
+        android:text="@string/divider_bullet" />
+
+    <TextView
+        android:id="@+id/dollars"
+        style="@style/AppTheme.Subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/menu_name"
+        android:layout_toRightOf="@+id/menu_item_divider"
+        android:layout_marginBottom="2dp"
+        android:text="$"/>
+
+    <TextView
+        android:id="@+id/menu_price"
+        style="@style/AppTheme.Subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/menu_name"
+        android:layout_toRightOf="@+id/dollars"
+        android:layout_marginBottom="2dp"
+        android:text="32"/>
+
+    <TextView
+        android:id="@+id/menu_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/menu_name"
+        android:layout_below="@+id/menu_price"
+        android:layout_marginBottom="2dp"
+        android:text="Sandwich with chicken and ham"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/menu_category"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignLeft="@+id/menu_name"-->
+<!--        android:layout_below="@+id/menu_description"-->
+<!--        android:layout_marginBottom="2dp"-->
+<!--        android:text="Afternoon Tea"/>-->
+
+    <Button
+        android:id="@+id/menu_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/edit" />
+
+</RelativeLayout>

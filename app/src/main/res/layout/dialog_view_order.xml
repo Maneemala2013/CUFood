@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Back button -->
+    <ImageView
+        android:id="@+id/view_order_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/view_order_option"
+        style="@style/AppTheme.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery" />
+
+
+    <TextView
+        android:id="@+id/view_order_timestamp"
+        style="@style/AppTheme.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Time: 17 March 2023 08.23" />
+
+    <TextView
+        android:id="@+id/view_order_userId"
+        style="@style/AppTheme.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Id: littlestar88" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/view_order_userContact"-->
+<!--        style="@style/AppTheme.Body1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Customer Contact: TO BE ADDED" />-->
+
+    <View
+        style="@style/AppTheme.Divider"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/view_order_menus"
+        style="@style/AppTheme.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fried noodle (1)\nPork hamburger (1)" />
+
+    <TextView
+        android:id="@+id/view_order_notes"
+        style="@style/AppTheme.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes: No cucumber" />
+
+    <View
+        style="@style/AppTheme.Divider"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/view_order_price"
+        style="@style/AppTheme.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price: $68" />
+
+    <View
+        style="@style/AppTheme.Divider"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/view_order_address"
+        style="@style/AppTheme.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/view_order_rider"
+        style="@style/AppTheme.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/view_order_finished"
+        style="@style/AppTheme.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Finished Cooking Time:" />
+
+</LinearLayout>

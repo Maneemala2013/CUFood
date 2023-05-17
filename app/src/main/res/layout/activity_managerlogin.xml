@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <TextView
+        style="@style/AppTheme.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In - Canteen manager"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/canteenID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Canteen ID"
+        android:textColor="@color/greySecondary" />
+
+    <EditText
+        android:id="@+id/canteenpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:textColor="@color/greySecondary"
+        android:inputType="textPassword"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/log_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Log In"
+            android:theme="@style/ThemeOverlay.FilterButton"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/AppTheme.Body1"
+            android:id="@+id/text_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go back to user log in."
+            android:textSize="16sp"
+            android:layout_marginTop="70dp"
+            />
+        <Button
+            android:id="@+id/log_in_return"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textColor="@color/greySecondary"
+            android:theme="@style/ThemeOverlay.FilterButton"
+            android:layout_marginTop="70dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

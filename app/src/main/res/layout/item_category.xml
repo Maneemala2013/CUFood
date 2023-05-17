@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp">
+
+    <ImageView
+        android:id="@+id/category_image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:alpha="1.0"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/food" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/remove_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="remove"
+            android:backgroundTint="@color/redButton"/>
+
+        <Button
+            android:id="@+id/edit_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="edit" />
+
+        <Switch
+            android:id="@+id/available_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:scrollbarSize="10dp"
+            android:showText="true"
+            android:text="Available?"
+            android:textOff="No"
+            android:textOn="Yes"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/category_image"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white60"
+        android:gravity="center"
+        android:text="Category 1"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

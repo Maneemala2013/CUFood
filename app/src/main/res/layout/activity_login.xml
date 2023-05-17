@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+    >
+
+<TextView
+    style="@style/AppTheme.Title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Log In"
+    android:textSize="24sp"
+    android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Username"
+        android:minHeight="48dp"
+        android:textColor="@color/greySecondary" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:minHeight="48dp"
+        android:textColor="@color/greySecondary" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/greySecondary" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <Button
+        android:id="@+id/log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Log In"
+        android:theme="@style/ThemeOverlay.FilterButton"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/AppTheme.Body1"
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You do not have an account yet?"
+        android:textSize="16sp"
+        android:layout_marginTop="70dp"
+        />
+    <Button
+        android:id="@+id/sign_up"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/greySecondary"
+        android:theme="@style/ThemeOverlay.FilterButton"
+        android:layout_marginTop="70dp"
+        />
+
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/log_in_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Canteen manager - Log In"
+        android:theme="@style/ThemeOverlay.FilterButton"
+         />
+
+</LinearLayout>

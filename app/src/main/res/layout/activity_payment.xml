@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            style="@style/AppTheme.Title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select payment method"
+            android:textSize="16sp"
+            style="@style/AppTheme.Body1"
+            android:layout_marginTop="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash"/>
+
+            <RadioButton
+                android:id="@+id/credit_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit Card"/>
+
+            <RadioButton
+                android:id="@+id/octopus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Octopus"/>
+
+            <RadioButton
+                android:id="@+id/PayMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PayMe"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="16dp"/>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialog_category_title"
+        style="@style/AppTheme.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/add_new_category" />
+
+    <EditText
+        android:id="@+id/category_form_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/category_name" />
+
+    <Button
+        android:id="@+id/select_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Select Category Image"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <!--ImageView to preview the selected image-->
+    <ImageView
+        android:id="@+id/IVPreviewImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/select_image"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/category_form_cancel"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textColor="@color/greySecondary"
+            android:theme="@style/ThemeOverlay.FilterButton" />
+
+
+        <Button
+            android:id="@+id/category_form_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/submit"
+            android:theme="@style/ThemeOverlay.FilterButton" />
+
+    </LinearLayout>
+
+</LinearLayout>

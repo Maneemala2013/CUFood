@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFAF7A</color>
+    <color name="colorPrimaryDark">#FFFF8b3d</color>
+    <color name="colorAccent">#FFCD01</color>
+    <color name="beige">#FFF5F5DC</color>
+
+<!--    Button-->
+    <color name="greenButton">#FF33893A</color>
+    <color name="redButton">#FFCE3C28</color>
+
+<!--    Order status-->
+    <color name="green">#FFE1F3BF</color>
+    <color name="yellow">#FFF4EBB3</color>
+    <color name="red">#FFFCD7C8</color>
+
+    <color name="greyPrimary">#DE000000</color>
+    <color name="greySecondary">#8B000000</color>
+    <color name="greyDisabled">#61000000</color>
+    <color name="white60">#66FFFFFF</color>
+    <color name="greyPale">#FFF2F2F2</color>
+</resources>
